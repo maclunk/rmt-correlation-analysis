@@ -1,0 +1,24 @@
+universe:
+  # 200-ish liquid tickers; you can override in Notebook 01.
+  # Fallback: S&P 500 subset via yfinance tickers list if empty.
+  tickers: []
+dates:
+  start: "2015-01-01"
+  end: "2025-09-01"
+returns:
+  method: "log"         # "log" or "simple"
+  freq: "1d"
+windows:
+  in_sample: 504        # ~2 years for estimation
+  rebalance: 21         # monthly-ish
+  max_assets: 220
+backtest:
+  transaction_cost_bps: 1.0
+  leverage_cap: 1.0
+  long_only: true
+rmt:
+  cleaning: "clip"      # "clip" or "none"
+  use_market_regression: false
+plots:
+  style: "whitegrid"
+random_seed: 42

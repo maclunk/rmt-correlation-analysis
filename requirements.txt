@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+matplotlib
+seaborn
+yfinance
+scikit-learn
+cvxpy
+pandas-datareader
+tqdm
+pyyaml
